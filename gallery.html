@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Products</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery-content">
+            <h1>Products</h1>
+            <p>Welcome to my products page! Here are some of the systems I've worked on.</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <a href="D:\Panashemwebsite\PosSystem.png" target="_blank">
+                        <img src="D:\Panashemwebsite\PosSystem.png" alt="POS System">
+                    </a>
+                    <p>POS System - ₱5,000</p>
+                </div>
+                <div class="gallery-item">
+                    <a href="D:\Panashemwebsite\voting.png" target="_blank">
+                        <img src="D:\Panashemwebsite\voting.png" alt="Voting System">
+                    </a>
+                    <p>Voting System - ₱3,500</p>
+                </div>
+                <div class="gallery-item">
+                    <a href="D:\Panashemwebsite\Grading System.png" target="_blank">
+                        <img src="D:\Panashemwebsite\Grading System.png" alt="Grading System">
+                    </a>
+                    <p>Grading System - ₱4,000</p>
+                </div>
+                <div class="gallery-item">
+                    <a href="D:\Panashemwebsite\Login.png" target="_blank">
+                        <img src="D:\Panashemwebsite\Login.png" alt="Login System">
+                    </a>
+                    <p>Login System - ₱2,000</p>
+                </div>
+                <div class="gallery-item">
+                    <a href="D:\Panashemwebsite\Screenshot 2024-10-13 144356.png" target="_blank">
+                        <img src="D:\Panashemwebsite\Screenshot 2024-10-13 144356.png" alt="Student Portal System">
+                    </a>
+                    <p>Student Portal System - ₱6,000</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <style>
+        /* LED-inspired styling for Products page */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111; /* Dark background for LED effect */
+            color: white;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            text-shadow: 0 0 5px rgba(0, 255, 255, 0.6); /* LED glow effect for links */
+            transition: text-shadow 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            text-shadow: 0 0 10px rgba(0, 255, 255, 1); /* Stronger glow on hover */
+        }
+
+        .gallery-content {
+            padding: 50px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.2); /* LED box shadow */
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            padding: 10px;
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth scaling and glowing effect */
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Subtle LED glow */
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05); /* Scale effect on hover */
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.7); /* Stronger glow on hover */
+        }
+
+        .gallery-item img {
+            max-width: 100%; /* Image should fit within item */
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.8); /* LED glow for images */
+        }
+
+        .gallery-item p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #d0d0d0; /* Slightly lighter text color */
+            text-shadow: 0 0 5px rgba(0, 255, 255, 0.6); /* Glow for product descriptions */
+        }
+
+        .gallery-item a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</body>
+</html>

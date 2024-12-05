@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Gallery.html">Products</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <div class="left-side">
+                <h1 class="glow-text">Hi, I’m Shem M. Paña</h1>
+                <p class="glow-text-subtitle">BSIT Student</p>
+                <a href="contact.html" class="hire-button glow-button">Hire Me</a>
+                <h2 class="explore glow-text">Explore My Website Design</h2>
+            </div>
+            <div class="right-side">
+                <img src="D:\Panashemwebsite\Shem.png" alt="Shem M. Paña Photo" class="glow-effect">
+            </div>
+        </section>
+    </main>
+
+    <style>
+        /* Basic styling for Home page */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #282c34;
+            color: white;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+        }
+
+        .left-side {
+            max-width: 600px;
+        }
+
+        .glow-text {
+            font-size: 48px;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+            animation: glow-text 1.5s infinite alternate;
+        }
+
+        .glow-text-subtitle {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00;
+        }
+
+        .explore {
+            font-size: 36px;
+            color: #ffcc00;
+            margin-top: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 15px #ffcc00, 0 0 25px #ffcc00;
+            animation: pulse 2s infinite alternate;
+        }
+
+        .hire-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            box-shadow: 0 0 15px #007bff;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .hire-button:hover {
+            background-color: #0056b3;
+            box-shadow: 0 0 25px #00ccff, 0 0 35px #007bff;
+        }
+
+        .glow-effect {
+            max-width: 300px;
+            border-radius: 50%;
+            box-shadow: 0 0 30px 10px rgba(0, 255, 255, 0.7),
+                        0 0 60px 20px rgba(0, 255, 255, 0.5),
+                        0 0 90px 30px rgba(0, 255, 255, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .glow-effect:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 50px 20px rgba(0, 255, 255, 0.9),
+                        0 0 80px 30px rgba(0, 255, 255, 0.7),
+                        0 0 120px 40px rgba(0, 255, 255, 0.5);
+        }
+
+        @keyframes glow-text {
+            0% {
+                text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+            }
+            100% {
+                text-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc, 0 0 50px #00ffcc;
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                text-shadow: 0 0 15px #ffcc00, 0 0 25px #ffcc00;
+            }
+            100% {
+                text-shadow: 0 0 30px #ffcc00, 0 0 40px #ffcc00;
+            }
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Products</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-content">
+            <h1>Contact Me</h1>
+            <p>If you have any questions or would like to get in touch, feel free to reach out to me!</p>
+            <div class="contact-details">
+                <h2>Contact Information</h2>
+                <p><strong>Phone:</strong> <a href="tel:09753483815">09753483815</a></p>
+                <p><strong>Email:</strong> <a href="mailto:Shempana031@gmail.com">Shempana031@gmail.com</a></p>
+            </div>
+
+            <h2>Contact Form</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <style>
+        /* Basic styling for Contact page with white text and glowing LED design */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111; /* Dark background for contrast */
+            color: white; /* White text color */
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .contact-content {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .contact-details {
+            margin-bottom: 20px;
+        }
+
+        h1, h2 {
+            font-size: 2.5rem;
+            text-shadow: 0 0 8px rgba(0, 255, 255, 0.8); /* Glowing LED text */
+        }
+
+        a {
+            color: #0ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-shadow: 0 0 5px #0ff; /* Glow effect on hover */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            margin: 10px 0 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #555;
+            border-radius: 4px;
+            background-color: #222; /* Dark input background */
+            color: white;
+            box-shadow: 0 0 5px rgba(0, 255, 255, 0.5); /* Glowing border */
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #0ff;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: bold;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.7); /* Glowing button */
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #00c8c8; /* Darker glow on hover */
+            box-shadow: 0 0 15px rgba(0, 255, 255, 1);
+        }
+    </style>
+</body>
+</html>

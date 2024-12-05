@@ -1,0 +1,68 @@
+/* Make the background image fill the whole page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('file:///D:/wp9153550.jpg'); /* Use the absolute path */
+    background-size: cover; /* Make sure the image covers the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 100vh; /* Make the body full height */
+}
+
+/* Styles for the header and nav */
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent black */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Content section styling */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    color: white;
+}
+
+.left-side {
+    max-width: 50%;
+}
+
+.right-side img {
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+.hire-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hire-button:hover {
+    background-color: #0056b3;
+}
