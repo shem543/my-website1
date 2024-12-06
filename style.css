@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url('file:///D:/wp9153550.jpg'); /* Use the absolute path */
+    background-image: url('https://raw.githubusercontent.com/shem543/my-website1/main/wp9153550.jpg'); /* Use the raw GitHub URL */
     background-size: cover; /* Make sure the image covers the entire background */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
@@ -65,4 +65,43 @@ nav ul li a {
 
 .hire-button:hover {
     background-color: #0056b3;
+}
+
+/* Basic styling for Home page */
+.glow-text {
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+}
+
+.glow-text-subtitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00;
+}
+
+.explore {
+    font-size: 36px;
+    color: #ffcc00;
+    margin-top: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px #ffcc00, 0 0 25px #ffcc00;
+}
+
+/* Additional styling for hover effect */
+.glow-effect {
+    max-width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 30px 10px rgba(0, 255, 255, 0.7),
+                0 0 60px 20px rgba(0, 255, 255, 0.5),
+                0 0 90px 30px rgba(0, 255, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glow-effect:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 50px 20px rgba(0, 255, 255, 0.9),
+                0 0 80px 30px rgba(0, 255, 255, 0.7),
+                0 0 120px 40px rgba(0, 255, 255, 0.5);
 }
